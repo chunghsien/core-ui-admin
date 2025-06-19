@@ -1,7 +1,10 @@
 import { lazy } from 'react';
 
-const LoginPage = lazy(() => import('@/pages/Login/LoginPage'));
+//@core-ui-admin
+//const LoginPage = lazy(() => import(/*@vite-ignore*/ '@core-ui-admin/pages/Login/LoginPage'));
+const LoginPage = lazy(() => import('../pages/Login/LoginPage'));
 
 export const adminRoutes = [
-    { path: '/admin/login', element: <LoginPage /> },
+    { path: '/zh-TW/admin', element: <LoginPage /> },
+    //{ path: '/admin/login', element: <LoginPage /> },
 ];

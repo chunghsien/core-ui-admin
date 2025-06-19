@@ -1,0 +1,15 @@
+{
+  "name": "pinpin/core-ui-admin",
+  "autoload": {
+    "psr-4": {
+      "Pinpin\\CoreUiAdmin\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Pinpin\\CoreUiAdmin\\Providers\\ThemeServiceProvider"
+      ]
+    }
+  }
+}
