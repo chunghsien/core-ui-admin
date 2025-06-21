@@ -1,15 +1,17 @@
 {
-  "name": "pinpin/core-ui-admin",
-  "autoload": {
-    "psr-4": {
-      "Pinpin\\CoreUiAdmin\\": "src/"
+    "name": "pinpin/core-ui-admin",
+    "description": "Core UI Admin React components for pinpinAura",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Pinpin\\CoreUiAdmin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pinpin\\CoreUiAdmin\\Providers\\CoreUiAdminServiceProvider"
+            ]
+        }
     }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Pinpin\\CoreUiAdmin\\Providers\\ThemeServiceProvider"
-      ]
-    }
-  }
 }
